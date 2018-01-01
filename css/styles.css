@@ -1,0 +1,35 @@
+:root {
+	--nav-width: 15%;
+	--header-width: 85%;
+	--header-height: 80px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+nav {
+	position: fixed;
+	width: var(--nav-width);
+	height: 100%;
+	background: black;
+	color: white;
+}
+
+header {
+	padding-left: var(--nav-width);
+	position: fixed;
+	width: var(--header-width);
+	text-align: center;
+	border-bottom: 1px solid;
+	height: var(--header-height);
+	background-color: white;
+}
+
+section {
+	padding-left: calc(10px + var(--nav-width));
+	padding-top: calc(20px + var(--header-height));
+}
