@@ -2,7 +2,7 @@ $(function() {
 
 	$(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
-	$("section, header").not(".gallery").css("display", "none");
+	$("body > section, header").not(".gallery").css("display", "none");
 
 	$("#button").click(function() {
 		$("#button, #nav, section, header").toggleClass("visible");
@@ -17,7 +17,10 @@ $(function() {
 			$("i."+$(this).attr("class").split(' ')[0]).addClass("active");
 		}
 		$("."+displayedClass).css("display", "");
-		$("section, header").not("."+displayedClass).css("display", "none");
+		$("body > section, header").not("."+displayedClass).css("display", "none");
 	});
 
+	var profile_section = $("header.gallery section");
+	$("header").prepend(profile_section);
+	
 });

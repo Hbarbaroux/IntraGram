@@ -36,13 +36,13 @@ body {
 }
 
 #nav #margin #button #line1, #line2, #line3 {
-    width: 25px;
-    height: 4px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.4s;
-    border-radius: 5px;
-    transition: all 0.5s ease;
+	width: 25px;
+	height: 4px;
+	background-color: white;
+	margin: 4px 0;
+	transition: 0.4s;
+	border-radius: 5px;
+	transition: all 0.5s ease;
 }
 
 #nav #margin #button.visible #line1 {
@@ -121,17 +121,62 @@ header {
 	transition: all 0.5s ease;
 }
 
+header h1 {
+	text-align: left;
+	padding-left: 30px;
+}
+
 header.visible {
 	padding-left: var(--nav-width);
 	width: var(--header-width);
 }
 
-section {
+header section {
+	position: relative;
+	width: 70px;
+	float: right;
+	margin: 5px 20px 5px 10px;
+}
+
+header section img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+header section div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #93bcff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+header section:hover div {
+	opacity: 0.5;
+}
+
+header section div p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	padding-top: 25%;
+}
+
+body > section {
 	padding-left: 70px;
 	padding-top: calc(20px + var(--header-height));
 	transition: all 0.5s ease;
 }
 
-section.visible {
+body > section.visible {
 	padding-left: var(--nav-width));
 }
