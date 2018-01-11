@@ -42,6 +42,21 @@ body {
     margin: 4px 0;
     transition: 0.4s;
     border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#nav #margin #button.visible #line1 {
+	transform: translate(0px, 8px) rotate(45deg);
+	-webkit-transform: translate(0px, 8px) rotate(45deg);
+}
+
+#nav #margin #button.visible #line2 {
+	background-color: black;
+}
+
+#nav #margin #button.visible #line3 {
+	transform: translate(0px, -8px) rotate(-45deg);
+	-webkit-transform: translate(0px, -8px) rotate(-45deg);
 }
 
 #nav #margin i:first-of-type {
@@ -91,6 +106,10 @@ body {
 	background-color: #1c2a42;
 }
 
+#nav.visible {
+	width: var(--nav-width);
+}
+
 header {
 	padding-left: 70px;
 	position: fixed;
@@ -102,19 +121,15 @@ header {
 	transition: all 0.5s ease;
 }
 
+header.visible {
+	padding-left: var(--nav-width);
+	width: var(--header-width);
+}
+
 section {
 	padding-left: 70px;
 	padding-top: calc(20px + var(--header-height));
 	transition: all 0.5s ease;
-}
-
-#nav.visible {
-	width: var(--nav-width);
-}
-
-header.visible {
-	padding-left: var(--nav-width);
-	width: var(--header-width);
 }
 
 section.visible {
