@@ -1,11 +1,13 @@
 $(function() {
 
+	$("section.timeline").load("timeline.html");
+
 	$(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
 
 	$("#button").click(function() {
-		$("#button, #nav, section, header").toggleClass("visible");
+		$("#button, #nav, body > section, header").toggleClass("visible");
 	});
 
 	$("button").click(function() {
