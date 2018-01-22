@@ -14,11 +14,15 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: Arial;
+	font-family: "Source Sans Pro", sans-serif!important;
+}
+
+body h1 {
+	font-weight: 700;
 }
 
 #nav {
-	z-index: 3;
+	z-index: 5;
 	width: 70px;
 	position: fixed;
 	height: 100%;
@@ -67,7 +71,7 @@ body {
 }
 
 #nav #margin i:first-of-type {
-	margin-top: 8.5px;
+	margin-top: 8px;
 }
 
 #nav #margin i {
@@ -90,6 +94,7 @@ body {
 	text-align: center;
 	height: 40px;
 	vertical-align: middle;
+	margin-bottom: 21px;
 }
 
 #nav nav ul {
@@ -118,10 +123,10 @@ body {
 }
 
 header {
-	z-index: 2;
+	z-index: 4;
 	padding-left: 70px;
 	position: fixed;
-	width: calc(100% - 70px);
+	width: 100%;
 	text-align: center;
 	border-bottom: 1px solid;
 	height: var(--header-height);
@@ -132,12 +137,12 @@ header {
 header h1 {
 	text-align: left;
 	padding-left: 30px;
-	font-size: 4rem;
+	font-size: 3.5rem;
 }
 
 header.visible {
 	padding-left: var(--nav-width);
-	width: var(--header-width);
+	width: 100%;
 }
 
 header section {
@@ -177,7 +182,7 @@ header section div p {
 	text-align: center;
 	font-weight: bold;
 	font-size: 13px;
-	padding-top: 25%;
+	padding-top: 40%;
 }
 
 body > section {
@@ -195,8 +200,7 @@ body > section.visible {
 }
 
 section.timeline {
-	position: absolute;
-    font-family: "Source Sans Pro", sans-serif;
+	min-height: 100vh;
     color: #383838;
     background-color: #f8f8f8;
 }

@@ -170,7 +170,7 @@ $(function($){
 			visibleContent.removeClass('leave-right leave-left');
 			selectedContent.removeClass('enter-left enter-right');
 		});
-		eventsContent.css('height', selectedContentHeight+'px');
+		eventsContent.css('height', /*selectedContentHeight+'px'*/ '100%');
 	}
 
 	function updateOlderEvents(event) {
