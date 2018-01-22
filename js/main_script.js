@@ -1,6 +1,9 @@
 $(function() {
 
-	$(".gallery").css("display", "");
+    $("section.gallery").load("gallery.html");
+
+
+    $(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
 
