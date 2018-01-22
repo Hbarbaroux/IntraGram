@@ -1,8 +1,10 @@
 $(function() {
 
 	$("section.timeline").load("timeline.html");
+	$("section.gallery").load("gallery.html");
 
-	$(".gallery").css("display", "");
+
+    $(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
 
