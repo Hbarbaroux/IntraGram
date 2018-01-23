@@ -1,0 +1,377 @@
+
+		<div id="album1" class="responsive">
+            <div class="gallery polaroid">
+                <img id = "album1/photo1" src = "assets/albums/album1_photo1.jpg" alt="photo1" width="300" height="200" onclick ="openModal('1');currentSlide(1)" class="cursor">
+				<figcaption class="caption">
+				<h2>Album1 </h2>
+				<a title="Holidays in Germany" onclick ="openModal('1');currentSlide(1)">View more</a>           
+				</figcaption>
+            </div>
+          </div>
+		  
+		  <div id="album2" class="responsive">
+            <div class="gallery polaroid">
+                <img id="album2/photo1" src="assets/albums/album2_photo1.jpg" alt="album2" width="300" height="200" onclick ="openModal('2');currentSlide(12)" class="cursor">
+             <figcaption class="caption">
+				<h2>Album2</h2>
+				<a title="1" onclick ="openModal('2');currentSlide(12)">View more</a>           
+			</figcaption>
+            </div>
+          </div>
+
+
+          <div id="album3"class="responsive">
+            <div class="gallery polaroid">
+                <img id="album3/photo1" src="assets/albums/album3_photo1.jpg" alt="photo1" width="600" height="400" onclick ="openModal('3');currentSlide(21)" class="cursor">
+             <figcaption class="caption">
+				<h2>Album3</h2>
+				<a title="1" onclick ="openModal('3');currentSlide(21)" >View more</a></p>            
+			</figcaption>
+            </div>
+          </div>
+		  
+
+          <div id="album4" class="responsive">
+            <div class="gallery polaroid">
+                <img id ="album4/photo1" src="assets/albums/album4_photo1.jpg" alt="photo1" width="600" height="400" onclick ="openModal('4');currentSlide(30)" class="cursor">
+             <figcaption class="caption">
+				<h2>Album4</h2>
+				<a title="1" onclick ="openModal('4');currentSlide(30)" >View more</a></p>            
+			</figcaption>
+            </div>
+          </div>
+					  
+			<!--light box1-->		  
+			<div id="myModal1" class="modal" name="album1">
+			  <span class="close cursor" onclick="closeModal(1)">&times;</span>
+			  <div class="modal-content">
+
+				<div class="mySlides">
+				  <div class="numbertext">1 / 11 </div>
+				  <img src="assets/albums/album1_photo1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">2 / 11 </div>
+				  <img src="assets/albums/album1_photo2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">3 / 11 </div>
+				  <img src="assets/albums/album1_photo3.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">4 / 11 </div>
+				  <img src="assets/albums/album1_photo4.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">5 / 11 </div>
+				  <img src="assets/albums/album1_photo5.jpg" style="width:100%">
+				</div>				
+				<div class="mySlides">
+				  <div class="numbertext">6 / 11 </div>
+				  <img src="assets/albums/album1_photo6.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">7 / 11 </div>
+				  <img src="assets/albums/album1_photo7.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">8 / 11 </div>
+				  <img src="assets/albums/album1_photo8.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">9 / 11 </div>
+				  <img src="assets/albums/album1_photo9.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">10 / 11 </div>
+				  <img src="assets/albums/album1_photo10.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">11 / 11 </div>
+				  <img src="assets/albums/album1_photo11.jpg" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+
+
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album1_photo11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Northern Lights">
+				</div>
+			</div>
+		</div>
+			
+			
+			
+			<!--light box2-->		  
+			<div id="myModal2" class="modal" name="album2">
+			  <span class="close cursor" onclick="closeModal('2')">&times;</span>
+			  <div class="modal-content">
+
+				<div class="mySlides">
+				  <div class="numbertext">1 / 9</div>
+				  <img src="assets/albums/album2_photo1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">2 / 9</div>
+				  <img src="assets/albums/album2_photo2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">3 / 9</div>
+				  <img src="assets/albums/album2_photo3.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">4 / 9</div>
+				  <img src="assets/albums/album2_photo4.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">5 / 9</div>
+				  <img src="assets/albums/album2_photo5.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">6 / 9</div>
+				  <img src="assets/albums/album2_photo6.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">7 / 9</div>
+				  <img src="assets/albums/album2_photo7.jpg" style="width:100%">
+				</div>				
+				<div class="mySlides">
+				  <div class="numbertext">8 / 9</div>
+				  <img src="assets/albums/album2_photo8.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">9 / 9</div>
+				  <img src="assets/albums/album2_photo9.jpg" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+
+				<div class="gallery_column" >
+				  <img class="demo cursor" src="assets/albums/album2_photo1.jpg" style="width:100%" onclick="currentSlide(12)" alt="Nature and sunrise">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo2.jpg" style="width:100%" onclick="currentSlide(13)" alt="Trolltunga, Norway">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo3.jpg" style="width:100%" onclick="currentSlide(14)" alt="Mountains and fjords">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo4.jpg" style="width:100%" onclick="currentSlide(15)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo5.jpg" style="width:100%" onclick="currentSlide(16)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo6.jpg" style="width:100%" onclick="currentSlide(17)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo7.jpg" style="width:100%" onclick="currentSlide(18)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo8.jpg" style="width:100%" onclick="currentSlide(19)" alt="Northern Lights">
+				</div>				
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo9.jpg" style="width:100%" onclick="currentSlide(20)" alt="Northern Lights">
+				</div>
+			</div>
+			</div>
+			
+			
+			<!--light box3---->		  
+			<div id="myModal3" class="modal" name="album3">
+			  <span class="close cursor" onclick="closeModal('3')">&times;</span>
+			  <div class="modal-content">
+
+				<div class="mySlides">
+				  <div class="numbertext">1 / 9</div>
+				  <img src="assets/albums/album3_photo1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">2 / 9</div>
+				  <img src="assets/albums/album3_photo2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">3 / 9</div>
+				  <img src="assets/albums/album3_photo3.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">4 / 9</div>
+				  <img src="assets/albums/album3_photo4.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">5 / 9</div>
+				  <img src="assets/albums/album3_photo5.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">6 / 9</div>
+				  <img src="assets/albums/album3_photo6.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">7 / 9</div>
+				  <img src="assets/albums/album3_photo7.jpg" style="width:100%">
+				</div>				
+				<div class="mySlides">
+				  <div class="numbertext">8 / 9</div>
+				  <img src="assets/albums/album3_photo8.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">9 / 9</div>
+				  <img src="assets/albums/album3_photo9.jpg" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+
+				<div class="gallery_column" >
+				  <img class="demo cursor" src="assets/albums/album3_photo1.jpg" style="width:100%" onclick="currentSlide(21)" alt="Nature and sunrise">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo2.jpg" style="width:100%" onclick="currentSlide(22)" alt="Trolltunga, Norway">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo3.jpg" style="width:100%" onclick="currentSlide(23)" alt="Mountains and fjords">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo4.jpg" style="width:100%" onclick="currentSlide(24)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo5.jpg" style="width:100%" onclick="currentSlide(25)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo6.jpg" style="width:100%" onclick="currentSlide(26)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo7.jpg" style="width:100%" onclick="currentSlide(27)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo8.jpg" style="width:100%" onclick="currentSlide(28)" alt="Northern Lights">
+				</div>				
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album3_photo9.jpg" style="width:100%" onclick="currentSlide(29)" alt="Northern Lights">
+				</div>
+			</div>
+			</div>
+			
+						
+			<!--light box4-->		  
+			<div id="myModal4" class="modal" name="album4">
+			  <span class="close cursor" onclick="closeModal('4')">&times;</span>
+			  <div class="modal-content">
+
+				<div class="mySlides">
+				  <div class="numbertext">1 / 7</div>
+				  <img src="assets/albums/album4_photo1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">2 / 7</div>
+				  <img src="assets/albums/album4_photo2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+				  <div class="numbertext">3 / 7</div>
+				  <img src="assets/albums/album4_photo3.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+				  <div class="numbertext">4 / 7</div>
+				  <img src="assets/albums/album4_photo4.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">5 / 7</div>
+				  <img src="assets/albums/album4_photo5.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">6 / 7</div>
+				  <img src="assets/albums/album4_photo6.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+				  <div class="numbertext">7 / 7</div>
+				  <img src="assets/albums/album4_photo7.jpg" style="width:100%">
+				</div>				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+
+				<div class="gallery_column" >
+				  <img class="demo cursor" src="assets/albums/album4_photo1.jpg" style="width:100%" onclick="currentSlide(30)" alt="Nature and sunrise">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album4_photo2.jpg" style="width:100%" onclick="currentSlide(31)" alt="Trolltunga, Norway">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album4_photo3.jpg" style="width:100%" onclick="currentSlide(32)" alt="Mountains and fjords">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album4_photo4.jpg" style="width:100%" onclick="currentSlide(33)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album2_photo5.jpg" style="width:100%" onclick="currentSlide(34)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album4_photo6.jpg" style="width:100%" onclick="currentSlide(35)" alt="Northern Lights">
+				</div>
+				<div class="gallery_column">
+				  <img class="demo cursor" src="assets/albums/album4_photo7.jpg" style="width:100%" onclick="currentSlide(36)" alt="Northern Lights">
+				</div>
+
+			</div>
+			
+			
+	</header>
+
+	

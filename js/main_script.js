@@ -1,9 +1,9 @@
 $(function() {
-
+	$("section.gallery").load("inserer_gallery.html");
 	$(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
-
+	
 	$("#button").click(function() {
 		$("#button, #nav, section, header").toggleClass("visible");
 	});
