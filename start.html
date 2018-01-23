@@ -18,9 +18,9 @@
 				<img src="assets/logo.svg"></img>
 			</div>
 			<form id="log-in" action="main.html">
-				<input autocomplete="off" type="text" name="username" placeholder="Username" required>
+				<input autocomplete="off" type="text" id="usernameForm" name="username" placeholder="Username" required>
 				<input autocomplete="off" type="password" name="password" placeholder="Password" required>
-				<input type="submit" name="submit" value="Login">
+				<input onclick="StoreData('usernameForm');" type="submit" name="submit" value="Login">
 			</form>
 			<p>Don't have an account ? <span>Sign up</span></p>
 

@@ -38,3 +38,13 @@ $(function() {
 	password.onchange = validatePassword;
 	confirm_password.onkeyup = validatePassword;
 });
+
+function getForm(iden) {
+    var val = document.getElementById(iden).value;
+    return(val);
+}
+
+function StoreData(iden) {
+	user = getForm(iden);
+    localStorage.setItem("username", user);
+}

@@ -23,8 +23,9 @@
 	<header class="gallery">
 		<section>
   			<img src="assets/profile-blank.jpg">
-  			<div><p>User</p></div>
+  			<div onclick="openModal();"><p>User</p></div>
 		</section>
+
 		<h1>GALLERY</h1>
 	</header>
 
@@ -98,10 +99,22 @@
 		</section>
 	</section>
 
-
 	<section class="parameters">
 		
 	</section>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h3>My Profil</h3>
+			<p id="usernameDisplayed">username :</p>
+			<img src="assets/profile-blank.jpg">
+			<form action="start.html">
+				<input type="submit" value="Log Out" />
+			</form>
+
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
