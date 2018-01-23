@@ -5,6 +5,7 @@ $(function() {
 		$("p").css({"display" : "none"});
 		$("#sign-up").css({"display" : "block"});
 		$("#back").css({"display" : "block"});
+		$("#logo").css({"display" : "none"});
 	});
 
 	$("#back").click(function() {
