@@ -36,8 +36,7 @@ $(function() {
 var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-function openModal() {
+function openModal2() {
     modal.style.display = "block";
 };
 
