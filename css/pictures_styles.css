@@ -1,0 +1,11 @@
+.main-container {
+	display: inline-block;
+	width: 95%;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1220px){
+	.main-container .box {
+		height: 256px;
+	}
+}

@@ -2,6 +2,7 @@ $(function() {
 
 	$("section.timeline").load("timeline.html");
 	$("section.gallery").load("gallery.html");
+	$("section.pictures").load("pictures.html");
 
 
     $(".gallery").css("display", "");

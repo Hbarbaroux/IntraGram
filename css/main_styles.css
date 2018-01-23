@@ -195,6 +195,10 @@ body > section {
 	transition: all 0.5s ease;
 }
 
+section.pictures {
+	text-align: center;
+}
+
 body > section.visible {
 	padding-left: var(--nav-width);
 }

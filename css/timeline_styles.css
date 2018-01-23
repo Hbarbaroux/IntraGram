@@ -291,18 +291,18 @@ ul, ol {
 	line-height: 1.6;
 }
 
-.timeline-pictures-container {
+.pictures-container {
 	border: 2px solid black;
 }
 
-.timeline-pictures-container .box {
+.pictures-container .box {
 	height: 192px;
 	border: 2px solid;
 	overflow: hidden;
 	padding: 0;
 }
 
-.timeline-pictures-container .box img {
+.pictures-container .box img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
@@ -321,7 +321,7 @@ ul, ol {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-	.timeline-pictures-container .box {
+	.pictures-container .box {
 		height: 384px;
 	}
 }
