@@ -1,4 +1,10 @@
 var geocoder;
+var a;
+var b;
+var c;
+var d;
+var M;
+var historicalOverlay;
 
 
 function initMap() {
@@ -10,57 +16,88 @@ function initMap() {
     geocoder = new google.maps.Geocoder();
 
 
-    var contentString = '<div id="content">'+
+    var contentStringFrankfurt = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+        '<h1 id="firstHeading" class="firstHeading">Frankfurt</h1>'+
         '<div id="bodyContent">'+
-        '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-        'sandstone rock formation in the southern part of the '+
-        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-        'south west of the nearest large town, Alice Springs; 450&#160;km '+
-        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-        'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-        'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-        'Aboriginal people of the area. It has many springs, waterholes, '+
-        'rock caves and ancient paintings. Uluru is listed as a World '+
-        'Heritage Site.</p>'+
-        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-        '(last visited June 22, 2009).</p>'+
+        '<p><b>August 2017</b>, Album of my pictures taken at Frankfurt !</p>'+
+        '<p>***lien des photos à mettre ici***</p>'+
         '</div>'+
         '</div>';
 
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
+    var contentStringMaldives = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Maldives</h1>'+
+        '<div id="bodyContent">'+
+        '<p><b>February 2017</b>, Album of my amazing trip to the Maldives !</p>'+
+        '<p>***lien des photos à mettre ici***</p>'+
+        '</div>'+
+        '</div>';
+
+    var contentStringBeijing = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Beijing</h1>'+
+        '<div id="bodyContent">'+
+        '<p><b>June 2017</b>, Album of my trip to Beijing !</p>'+
+        '<p>***lien des photos à mettre ici***</p>'+
+        '</div>'+
+        '</div>';
+
+    var contentStringSki = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Beijing</h1>'+
+        '<div id="bodyContent">'+
+        '<p><b>Decembre 2016</b>, Album of my Week-end to the Alps.</p>'+
+        '<p>***lien des photos à mettre ici***</p>'+
+        '</div>'+
+        '</div>';
+
+    var infowindowFrankfurt = new google.maps.InfoWindow({
+        content: contentStringFrankfurt
     });
 
-    var markerFrankfurt;
-    marker = addMarker(marker, map, uluru, "Frankfurt" );
-
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
+    var infowindowMaldives = new google.maps.InfoWindow({
+        content: contentStringMaldives
     });
 
-    var marker1;
-    geocodeAddressIntoMarker(geocoder, "Paris",marker1, map, "PARIS" )
+    var infowindowBeijing = new google.maps.InfoWindow({
+        content: contentStringBeijing
+    });
 
+    var infowindowSki = new google.maps.InfoWindow({
+        content: contentStringSki
+    });
+
+    var markerFrankfurt = geocodeAddressIntoMarker(geocoder,"Frankfurt", map, "Frankfurt", infowindowFrankfurt, a );
+    var markerMaldives = geocodeAddressIntoMarker(geocoder,"Maldives", map, "Maldives", infowindowMaldives, b );
+    var markerBeijing = geocodeAddressIntoMarker(geocoder,"Beijing", map, "Beijing", infowindowBeijing, c );
+    var markerSki = geocodeAddressIntoMarker(geocoder,"Chamonix", map, "Chamonix", infowindowSki, d );
+    //FUNCTIONS
+    function addMarker(map, position, label ){
+        M = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: label
+        });
+        return(M);
+    }
+
+    function geocodeAddressIntoMarker(geocoder, address, map, label, infowindowName, letter ) {
+        geocoder.geocode({'address': address}, function(results, status) {
+            if (status === 'OK') {
+                letter = addMarker(map,results[0].geometry.location, label );
+                letter.addListener('click', function() {
+                    infowindowName.open(map, letter);
+
+                });
+            }
+        });
+    }
 }
 
-function geocodeAddressIntoMarker(geocoder, address,markerName, map, label ) {
-    var a;
-    geocoder.geocode({'address': address}, function(results, status) {
-        if (status === 'OK') {
-            addMarker(markerName, map,results[0].geometry.location, label )
-        }
-    });
-}
 
-function addMarker(markerName, map, position, label ){
-    markerName = new google.maps.Marker({
-        position: position,
-        map: map,
-        title: label
-    });
-    return(markerName);
-}
+
