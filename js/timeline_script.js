@@ -1,11 +1,14 @@
-$(function($){
+$(function(){
 
+	// var timelines = $('.cd-horizontal-timeline'),
+	// 	eventsMinDistance = Math.floor(170 * $("body > section").width() / 1400);
 
-	var timelineZoom = 170;
-
+	// if (eventsMinDistance < 80) {
+	// 	eventsMinDistance = 80;
+	// };
 
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = timelineZoom;
+		eventsMinDistance = 130;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
