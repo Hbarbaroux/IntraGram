@@ -4,6 +4,11 @@ $(function() {
 		$("#log-in").css({"display" : "none"});
 		$("p").css({"display" : "none"});
 		$("#sign-up").css({"display" : "block"});
+		$("#back").css({"display" : "block"});
+	});
+
+	$("#back").click(function() {
+		location.reload();
 	});
 
 	var email = document.getElementById("email") ,confirm_email = document.getElementById("email2");

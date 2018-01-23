@@ -8,24 +8,28 @@
 
 <body>
 
-	<div class="ok">
+	<div class="container">
 		<div class="login">
+			<button id="back">
+				<i class="fa fa-chevron-left"></i>
+				Back
+			</button>
 			<div id="logo">
 				<img src="assets/logo.svg"></img>
 			</div>
 			<form id="log-in" action="main.html">
-				<input type="text" name="username" placeholder="Username" required>
-				<input type="password" name="password" placeholder="Password" required>
+				<input autocomplete="off" type="text" name="username" placeholder="Username" required>
+				<input autocomplete="off" type="password" name="password" placeholder="Password" required>
 				<input type="submit" name="submit" value="Login">
 			</form>
 			<p>Don't have an account ? <span>Sign up</span></p>
 
 			<form id="sign-up">
-				<input type="text" name="signUsername" placeholder="Username" required>
-				<input type="email" id="email" name="email" placeholder="Email" required>
-				<input type="email" id="email2" name="email2" placeholder="Confirm email" required>
-				<input type="password" id="signPassword" name="signPassword" placeholder="Password" required>
-				<input type="password" id="signPassword2" name="signPassword2" placeholder="Confirm password" required>
+				<input autocomplete="off" type="text" name="signUsername" placeholder="Username" required>
+				<input autocomplete="off" type="email" id="email" name="email" placeholder="Email" required>
+				<input autocomplete="off" type="email" id="email2" name="email2" placeholder="Confirm email" required>
+				<input autocomplete="off" type="password" id="signPassword" name="signPassword" placeholder="Password" required>
+				<input autocomplete="off" type="password" id="signPassword2" name="signPassword2" placeholder="Confirm password" required>
 				<input type="submit" name="signUp" value="Sign Up">
 			</form>
 		</div>
