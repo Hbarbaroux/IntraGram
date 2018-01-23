@@ -4,7 +4,7 @@ var b;
 var c;
 var d;
 var M;
-var map;
+var  map;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('mapFrame'), {
@@ -12,6 +12,7 @@ function initMap() {
         zoom: 2
     });
     geocoder = new google.maps.Geocoder();
+
 
     var contentStringFrankfurt = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -73,8 +74,10 @@ function initMap() {
     var markerMaldives = geocodeAddressIntoMarker(geocoder,"Maldives", map, "Maldives", infowindowMaldives, b );
     var markerBeijing = geocodeAddressIntoMarker(geocoder,"Beijing", map, "Beijing", infowindowBeijing, c );
     var markerSki = geocodeAddressIntoMarker(geocoder,"Chamonix", map, "Chamonix", infowindowSki, d );
+
     //FUNCTIONS
     function addMarker(map, position, label ){
+
         M = new google.maps.Marker({
             position: position,
             map: map,
@@ -96,5 +99,10 @@ function initMap() {
     }
 }
 
-
+$(".buttonMap").click(function() {
+    setTimeout(function(){
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter({lat: 25 , lng: 25});
+    }, 500);
+})
 
