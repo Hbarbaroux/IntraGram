@@ -1,14 +1,14 @@
 $(function() {
 
+
 	$("section.timeline").load("timeline.html");
-	$("section.gallery").load("gallery.html");
+	$("section.gallery").load("inserer_gallery.html");
 	$("section.pictures").load("pictures.html");
 
 
     $(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
-
 
 	$("#button").click(function() {
 		$("#button, #nav, body > section, header").toggleClass("visible");
