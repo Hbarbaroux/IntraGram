@@ -8,6 +8,7 @@ $(function() {
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
 
+
 	$("#button").click(function() {
 		$("#button, #nav, body > section, header").toggleClass("visible");
 	});
@@ -28,3 +29,4 @@ $(function() {
 	$("header").prepend(profile_section);
 	
 });
+
