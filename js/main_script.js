@@ -7,6 +7,7 @@ $(function() {
     $(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
+    $("#usernameDisplayed").text("username: " + localStorage.getItem("username"));
 
 
 	$("#button").click(function() {
@@ -29,4 +30,24 @@ $(function() {
 	$("header").prepend(profile_section);
 	
 });
+
+
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+function openModal() {
+    modal.style.display = "block";
+};
+
+span.onclick = function() {
+    modal.style.display = "none";
+};
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
 

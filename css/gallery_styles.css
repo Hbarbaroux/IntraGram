@@ -42,8 +42,6 @@
     background-color: white;
 }
 
-
-
 .albumDescription:hover {
     opacity: 0.8;
 }
@@ -65,7 +63,7 @@
 
 .albumDescription .albumShared{
     position: relative;
-    top: 180px;
+    top: 160px;
     color: black;
     font-size: 14px;
 }
