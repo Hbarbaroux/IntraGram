@@ -4,17 +4,14 @@ var b;
 var c;
 var d;
 var M;
-var historicalOverlay;
-
+var map;
 
 function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
-    var map = new google.maps.Map(document.getElementById('mapFrame'), {
-        zoom: 4,
-        center: uluru
+    map = new google.maps.Map(document.getElementById('mapFrame'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 2
     });
     geocoder = new google.maps.Geocoder();
-
 
     var contentStringFrankfurt = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -49,7 +46,7 @@ function initMap() {
     var contentStringSki = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">Beijing</h1>'+
+        '<h1 id="firstHeading" class="firstHeading">Chamonix</h1>'+
         '<div id="bodyContent">'+
         '<p><b>Decembre 2016</b>, Album of my Week-end to the Alps.</p>'+
         '<p>***lien des photos à mettre ici***</p>'+
