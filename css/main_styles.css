@@ -262,7 +262,7 @@ section.timeline a {
 
 .modal-content h3{
     position: relative;
-    left: 45%;
+    text-align: center;
 }
 
 .modal-content img{
@@ -274,9 +274,9 @@ section.timeline a {
 }
 
 .modal-content input{
-	position: relative;
-	left: 74%;
-    bottom: 100%;
+	position: absolute;
+    right: 11px;
+    bottom: 11px;
 	color: red;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -289,8 +289,9 @@ section.timeline a {
 }
 
 .modal-content p{
-    position: relative;
-    left: 9%;
+/*    position: absolute;
+    left: 11%;*/
+    text-align: center;
     font-size: 16px;
 }
 
