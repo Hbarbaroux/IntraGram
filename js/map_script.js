@@ -103,6 +103,6 @@ $(".buttonMap").click(function() {
     setTimeout(function(){
         google.maps.event.trigger(map, 'resize');
         map.setCenter({lat: 25 , lng: 25});
-    }, 500);
+    }, 100);
 })
 
