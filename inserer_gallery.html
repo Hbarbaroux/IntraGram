@@ -1,6 +1,6 @@
 
 		<div id="album1" class="responsive">
-            <div class="gallery polaroid">
+            <div class="album-cover polaroid">
                 <img id = "album1/photo1" src = "assets/albums/album1_photo1.jpg" alt="photo1" width="300" height="200" onclick ="openModal('1');currentSlide(1)" class="cursor">
 				<figcaption class="caption">
 				<h2>Album1 </h2>
@@ -10,7 +10,7 @@
           </div>
 		  
 		  <div id="album2" class="responsive">
-            <div class="gallery polaroid">
+            <div class="album-cover polaroid">
                 <img id="album2/photo1" src="assets/albums/album2_photo1.jpg" alt="album2" width="300" height="200" onclick ="openModal('2');currentSlide(12)" class="cursor">
              <figcaption class="caption">
 				<h2>Album2</h2>
@@ -20,8 +20,8 @@
           </div>
 
 
-          <div id="album3"class="responsive">
-            <div class="gallery polaroid">
+          <div id="album3" class="responsive">
+            <div class="album-cover polaroid">
                 <img id="album3/photo1" src="assets/albums/album3_photo1.jpg" alt="photo1" width="600" height="400" onclick ="openModal('3');currentSlide(21)" class="cursor">
              <figcaption class="caption">
 				<h2>Album3</h2>
@@ -32,7 +32,7 @@
 		  
 
           <div id="album4" class="responsive">
-            <div class="gallery polaroid">
+            <div class="album-cover polaroid">
                 <img id ="album4/photo1" src="assets/albums/album4_photo1.jpg" alt="photo1" width="600" height="400" onclick ="openModal('4');currentSlide(30)" class="cursor">
              <figcaption class="caption">
 				<h2>Album4</h2>
@@ -42,9 +42,9 @@
           </div>
 					  
 			<!--light box1-->		  
-			<div id="myModal1" class="modal" name="album1">
-			  <span class="close cursor" onclick="closeModal(1)">&times;</span>
-			  <div class="modal-content">
+			<div id="myModal1" class="visionneuse" name="album1">
+			  <span class="cross cursor" onclick="closeModal(1)">&times;</span>
+			  <div class="visionneuse-content">
 
 				<div class="mySlides">
 				  <div class="numbertext">1 / 11 </div>
@@ -141,9 +141,9 @@
 			
 			
 			<!--light box2-->		  
-			<div id="myModal2" class="modal" name="album2">
-			  <span class="close cursor" onclick="closeModal('2')">&times;</span>
-			  <div class="modal-content">
+			<div id="myModal2" class="visionneuse" name="album2">
+			  <span class="cross cursor" onclick="closeModal('2')">&times;</span>
+			  <div class="visionneuse-content">
 
 				<div class="mySlides">
 				  <div class="numbertext">1 / 9</div>
@@ -223,9 +223,9 @@
 			
 			
 			<!--light box3---->		  
-			<div id="myModal3" class="modal" name="album3">
-			  <span class="close cursor" onclick="closeModal('3')">&times;</span>
-			  <div class="modal-content">
+			<div id="myModal3" class="visionneuse" name="album3">
+			  <span class="cross cursor" onclick="closeModal('3')">&times;</span>
+			  <div class="visionneuse-content">
 
 				<div class="mySlides">
 				  <div class="numbertext">1 / 9</div>
@@ -305,9 +305,9 @@
 			
 						
 			<!--light box4-->		  
-			<div id="myModal4" class="modal" name="album4">
-			  <span class="close cursor" onclick="closeModal('4')">&times;</span>
-			  <div class="modal-content">
+			<div id="myModal4" class="visionneuse" name="album4">
+			  <span class="cross cursor" onclick="closeModal('4')">&times;</span>
+			  <div class="visionneuse-content">
 
 				<div class="mySlides">
 				  <div class="numbertext">1 / 7</div>
@@ -370,8 +370,5 @@
 				</div>
 
 			</div>
-			
-			
-	</header>
 
 	
