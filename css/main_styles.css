@@ -260,33 +260,39 @@ section.timeline a {
 	width:60%;
 }
 
+.modal-content h3{
+    position: relative;
+    left: 45%;
+}
+
 .modal-content img{
     position: relative;
     border-radius: 50%;
 	width: 40%;
 	height: 80%;
-	right: 30%;
+	right: 0%;
 }
 
 .modal-content input{
 	position: relative;
-	left: 40%;
+	left: 74%;
     bottom: 100%;
 	color: red;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     border-radius: 8px;
-    border: none;
+    border: 5px;
     padding: 16px 32px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 4px 2px 2px 2px;
     cursor: pointer;
 }
 
 .modal-content p{
     position: relative;
-    right: 29%;
-    font-size: 16px;}
+    left: 9%;
+    font-size: 16px;
+}
 
 .modal-content input:hover {
     background-color: red;
