@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/start_styles.css">
+	<meta charset="utf-8">
 </head>
 
 <body>
@@ -12,12 +13,25 @@
 			<div id="logo">
 				<img src="assets/logo.svg"></img>
 			</div>
-			<form action="main.html">
+			<form id="log-in" action="main.html">
 				<input type="text" name="username" placeholder="Username" required>
 				<input type="password" name="password" placeholder="Password" required>
 				<input type="submit" name="submit" value="Login">
 			</form>
+			<p>Don't have an account ? <span>Sign up</span></p>
+
+			<form id="sign-up">
+				<input type="text" name="signUsername" placeholder="Username" required>
+				<input type="email" id="email" name="email" placeholder="Email" required>
+				<input type="email" id="email2" name="email2" placeholder="Confirm email" required>
+				<input type="password" id="signPassword" name="signPassword" placeholder="Password" required>
+				<input type="password" id="signPassword2" name="signPassword2" placeholder="Confirm password" required>
+				<input type="submit" name="signUp" value="Sign Up">
+			</form>
 		</div>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/start_script.js"></script>
 
 </body>	

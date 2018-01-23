@@ -18,28 +18,32 @@ html, body {
 
 .login {
 	position: relative;
-	margin-left: 37.5%;
+	margin: 0 auto;
 	height: 100%;
-	width: 25%;
+	width: 350px;
 	background: linear-gradient(to bottom, rgba(119, 183, 239, 0.8) 0%, rgba(0,0,0,0.6) 100%);
+	text-align: center;
  }
 
 #logo img {
 	position: relative;
 	margin-top: 20%;
-	margin-left: calc(50% - 100px);
 	width: 200px;
 	height: 200px;
 }
 
 form {
 	position: absolute;
-	margin-left: 10%;
 	margin-top: 15vh;
 }
 
-input[type="text"], input[type="password"] {
-	width: 85%;
+form#sign-up {
+	display: none;
+	margin-top: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	width: 75%;
 	margin-top: 50px;
 	height: 20px;
 	background-color: transparent;
@@ -49,11 +53,11 @@ input[type="text"], input[type="password"] {
 	padding-left: 15px;
 	padding-bottom: 5px;
 	font-size: 15px;
+	box-shadow: none;
 }
 
 input[type="submit"] {
 	background-color: transparent;
-	margin-left: 30%;
 	margin-top: 80px;
 	padding: 10px 20px 10px 20px;
     height: auto;
@@ -64,6 +68,10 @@ input[type="submit"] {
     width: auto;
 }
 
+input[name="signUp"] {
+	margin-top: 40px;
+}
+
 input[type="submit"]:hover {
 	background-color: #3a83a3;
 }
@@ -71,4 +79,18 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
 	background-color: #285c72;
 	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+	position: absolute;
+	bottom: 0;
+	color: #556470;
+	text-align: center;
+	font-size: 0.8rem;
+	width: 100%;
+}
+
+p span {
+	color: white;
+	cursor: pointer;
 }
