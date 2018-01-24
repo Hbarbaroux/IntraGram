@@ -1,38 +1,40 @@
+
 function openModal(n) {
-  console.log('myModal'+n);
-  document.getElementById('myModal'+n).style.display = "block";
-  console.log('myModal'+n);
+	document.getElementById('myModal'+n).style.display = "block";
 }
 function closeModal(n) {
   document.getElementById('myModal'+n).style.display = "none";
 }
 
-
 var slideIndex = 1;
-showSlides(slideIndex);
+var n = 1;
+showSlides(slideIndex,n);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(nb_slide, n) {
+  showSlides(slideIndex += nb_slide,n);
+}
+function currentSlide(nb_slide, n) {
+  showSlides(slideIndex = nb_slide,n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(nb_slide, n) {
  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var albumElements = document.getElementsByName("album"+n);
+  console.log("album"+n);
+  console.log(albumElements.length);
+  
+  var dots = document.getElementsByName("demo"+n);
   var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-	  slides[i].style.display = "none";
+  if (nb_slide > albumElements.length) {slideIndex = 1}
+  if (nb_slide < 1) {slideIndex = albumElements.length}
+  for (i = 0; i < albumElements.length; i++) {
+	  albumElements[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
 	  dots[i].className = dots[i].className.replace(" active", "");
+	  console.log(dots[i].className);
   }
-  slides[slideIndex-1].style.display = "block";
+  albumElements[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
