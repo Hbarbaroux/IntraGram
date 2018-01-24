@@ -1,4 +1,3 @@
-
 function openModal(n) {
 	document.getElementById('myModal'+n).style.display = "block";
 }
@@ -24,17 +23,18 @@ function showSlides(nb_slide, n) {
   console.log(albumElements.length);
   
   var dots = document.getElementsByName("demo"+n);
-  var captionText = document.getElementById("caption");
-  if (nb_slide > albumElements.length) {slideIndex = 1}
-  if (nb_slide < 1) {slideIndex = albumElements.length}
+  if (nb_slide > albumElements.length) {
+    slideIndex = 1;
+  }
+  if (nb_slide < 1) {
+    slideIndex = albumElements.length;
+  }
   for (i = 0; i < albumElements.length; i++) {
 	  albumElements[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
 	  dots[i].className = dots[i].className.replace(" active", "");
-	  console.log(dots[i].className);
   }
   albumElements[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
