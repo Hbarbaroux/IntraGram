@@ -6,14 +6,17 @@
   text-align: left;
   font-family: arial;
 }
-
-.profile_title {
-  color: grey;
-  font-size: 18px;
+.image_profile{
+	width : 50%;
+	margin: auto;
+	display : block;
+	
+	
+	
 }
 .profile_element {
 	color :grey;
-    font size : 20px;
+    font-size : 20px;
 }
 label{
 	color : black;
@@ -35,11 +38,6 @@ label{
   font-size: 18px;
 }
 
-.profile_links {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
 
 .myprofile{
 text-align : center;
@@ -48,4 +46,6 @@ text-align : center;
   opacity: 0.7;
 }
 .profile_table{
-wisth:100%;}
+width:100%;
+
+}
