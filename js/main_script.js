@@ -4,7 +4,7 @@ $(function() {
 	$("section.timeline").load("timeline.html");
 	$("section.gallery").load("inserer_gallery.html");
 	$("section.pictures").load("pictures.html");
-
+	$("section.parameters").load("parameters.html");
 
     $(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
