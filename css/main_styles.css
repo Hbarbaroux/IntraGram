@@ -21,6 +21,10 @@ body h1 {
 	font-weight: 700;
 }
 
+button {
+	outline: none;
+}
+
 #nav {
 	z-index: 5;
 	width: 70px;
@@ -258,45 +262,52 @@ section.timeline a {
 	padding: 20px;
 	border: 1px solid #888;
 	width:60%;
+	text-align: center;
 }
 
 .modal-content h3{
     position: relative;
     text-align: center;
+    margin-top: -1%;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 20px; 
 }
 
 .modal-content img{
     position: relative;
     border-radius: 50%;
-	width: 40%;
-	height: 80%;
+	width: 35%;
+	height: 70%;
 	right: 0%;
 }
 
-.modal-content input{
-	position: absolute;
-    right: 11px;
-    bottom: 11px;
-	color: red;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    border-radius: 8px;
-    border: 5px;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px 2px 2px;
+input[type="submit"] {
+	background-color: transparent;
+	margin-top: 10px;
+	padding: 10px 20px 10px 20px;
+    height: auto;
+	border: 3px solid #3a83a3;
     cursor: pointer;
+    color: black;
+    font-size: 18px;
+    width: auto;
 }
 
-.modal-content p{
+input[type="submit"]:hover {
+	background-color: #3a83a3;
+	color: white;
+}
 
+input[type="submit"]:active {
+	background-color: #285c72;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+.modal-content p {
     text-align: center;
     font-size: 16px;
-}
-
-.modal-content input:hover {
-    background-color: red;
-    color: white;
 }
 
 .close {
@@ -312,58 +323,6 @@ section.timeline a {
 	text-decoration: none;
 	cursor: pointer;
 }
-/*  Contacts*/
-input[type=text] {
-	position: relative;
-	left: 35px;
-	width: 130px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	font-size: 16px;
-	background-color: white;
-	background: url('../assets/searchicon3.png');
-	background-position: 2px 5px;
-	background-repeat: no-repeat;
-	padding: 12px 20px 12px 40px;
-	-webkit-transition: width 0.4s ease-in-out;
-	transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-	width: 30%;
-}
-
-#navlist li
-{
-	display: inline;
-	list-style-type: none;
-	padding: 0px;
-}
-
-#navlist li section
-{
-	display: inline;
-	width:50px;
-}
-
-#navlist li section img
-{
-	display: inline;
-	border-radius: 50%;
-	width:150px;
-}
-
-#navlist li section h3
-{
-	position: relative;
-	text-align: center;
-	display: inline;
-	border-radius: 50%;
-	width:150px;
-}
-
-
 
 
 

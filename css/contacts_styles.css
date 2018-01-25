@@ -1,0 +1,51 @@
+/*  Contacts*/
+input[type=text] {
+	position: relative;
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background: url('../assets/searchicon3.png');
+	background-position: 2px 5px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	margin-bottom: 30px;
+}
+
+input[type=text]:focus {
+	width: 160px;
+}
+
+section.contacts {
+	text-align: center;
+}
+
+#navlist li
+{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px;
+	width: 150;
+	margin: 20px;
+}
+
+#navlist li img
+{
+	display: block;
+	border-radius: 50%;
+	width:150px;
+}
+
+#navlist li p
+{
+	display: block;
+	position: relative;
+	text-align: center;
+	border-radius: 50%;
+	width:150px;
+}
+

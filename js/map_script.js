@@ -20,7 +20,7 @@ function initMap() {
         '<h1 id="firstHeading" class="firstHeading">Frankfurt</h1>'+
         '<div id="bodyContent">'+
         '<p><b>August 2017</b>, Album of my pictures taken at Frankfurt !</p>'+
-        '<button onclick="openModal(1); currentSlide(1,1);">to the photos</button>'+
+        '<button onclick="openMapModal(1); currentSlideModal(1,1);">to the photos</button>'+
         '</div>'+
         '</div>';
 
@@ -30,7 +30,7 @@ function initMap() {
         '<h1 id="firstHeading" class="firstHeading">Maldives</h1>'+
         '<div id="bodyContent">'+
         '<p><b>February 2017</b>, Album of my amazing trip to the Maldives !</p>'+
-        '<button onclick="openModal(1); currentSlide(2,1);">to the photos</button>'+
+        '<button onclick="openMapModal(1); currentSlideModal(2,1);">to the photos</button>'+
         '</div>'+
         '</div>';
 
@@ -40,7 +40,7 @@ function initMap() {
         '<h1 id="firstHeading" class="firstHeading">Beijing</h1>'+
         '<div id="bodyContent">'+
         '<p><b>June 2017</b>, Album of my trip to Beijing !</p>'+
-        '<button onclick="openModal(1); currentSlide(3,1);">to the photos</button>'+
+        '<button onclick="openMapModal(1); currentSlideModal(3,1);">to the photos</button>'+
         '</div>'+
         '</div>';
 
@@ -50,7 +50,7 @@ function initMap() {
         '<h1 id="firstHeading" class="firstHeading">Chamonix</h1>'+
         '<div id="bodyContent">'+
         '<p><b>Decembre 2016</b>, Album of my Week-end to the Alps.</p>'+
-        '<button onclick="openModal(1); currentSlide(4,1);">to the photos</button>'+
+        '<button onclick="openMapModal(1); currentSlideModal(4,1);">to the photos</button>'+
         '</div>'+
         '</div>';
 
@@ -104,5 +104,5 @@ $(".buttonMap").click(function() {
         google.maps.event.trigger(map, 'resize');
         map.setCenter({lat: 25 , lng: 25});
     }, 100);
-})
+});
 

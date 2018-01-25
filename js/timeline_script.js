@@ -1,11 +1,6 @@
+// Inspired from https://codyhouse.co/gem/horizontal-timeline/
+
 $(function(){
-
-	// var timelines = $('.cd-horizontal-timeline'),
-	// 	eventsMinDistance = Math.floor(170 * $("body > section").width() / 1400);
-
-	// if (eventsMinDistance < 80) {
-	// 	eventsMinDistance = 80;
-	// };
 
 	var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 130;

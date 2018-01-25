@@ -1,24 +1,18 @@
 $(function() {
 
-
-	$("section.timeline").load("timeline.html");
-	$("section.gallery").load("inserer_gallery.html");
-	$("section.pictures").load("pictures.html");
-	$("section.parameters").load("parameters.html");
-
     $(".gallery").css("display", "");
 	$(".buttonGallery").addClass("active");
 	$("body > section, header").not(".gallery").css("display", "none");
-    $("#usernameDisplayed").text("username: " + localStorage.getItem("username"));
+    $("#usernameDisplayed").text("Username : " + localStorage.getItem("username"));
 
 	$("#button").click(function() {
 		$("#button, #nav, body > section, header").toggleClass("visible");
 	});
 
-	$("button").click(function() {
+	$("nav button").click(function() {
 		var displayedClass = $(this).html().toLowerCase();
 		if (! $(this).hasClass("active")) {
-			$("button").removeClass("active");
+			$("nav button").removeClass("active");
 			$(this).addClass("active");
 			$("i").removeClass("active");
 			$("i."+$(this).attr("class").split(' ')[0]).addClass("active");

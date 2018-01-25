@@ -70,6 +70,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 	padding-bottom: 5px;
 	font-size: 15px;
 	box-shadow: none;
+	outline: none;
 }
 
 input[type="submit"] {
